@@ -1,0 +1,404 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 09 16:55:01 2017
+# Process ID: 5208
+# Current directory: M:/Xilinx/projects/PLAY/PLAY.runs/synth_1
+# Command line: vivado.exe -log decode.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decode.tcl
+# Log file: M:/Xilinx/projects/PLAY/PLAY.runs/synth_1/decode.vds
+# Journal file: M:/Xilinx/projects/PLAY/PLAY.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source decode.tcl -notrace
+Command: synth_design -top decode -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 323.813 ; gain = 114.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'decode' [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:23]
+	Parameter T1MS bound to: 50000 - type: integer 
+	Parameter T2MS bound to: 100000000 - type: integer 
+	Parameter addr bound to: 17 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'xadc_1' [M:/Xilinx/projects/PLAY/PLAY.runs/synth_1/.Xil/Vivado-5208-PC-Kowalski/realtime/xadc_1_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'xadc_1' (1#1) [M:/Xilinx/projects/PLAY/PLAY.runs/synth_1/.Xil/Vivado-5208-PC-Kowalski/realtime/xadc_1_stub.v:5]
+WARNING: [Synth 8-350] instance 'AD1' of module 'xadc_1' requires 17 connections, but only 6 given [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:90]
+INFO: [Synth 8-155] case statement is not full and has no default [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:96]
+WARNING: [Synth 8-3848] Net error in module/entity decode does not have driver. [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:29]
+WARNING: [Synth 8-3848] Net dot in module/entity decode does not have driver. [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:40]
+INFO: [Synth 8-256] done synthesizing module 'decode' (2#1) [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:23]
+WARNING: [Synth 8-3331] design decode has unconnected port error
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 361.137 ; gain = 151.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 361.137 ; gain = 151.410
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'xadc_1' instantiated as 'AD1' [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:73]
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [M:/Xilinx/projects/PLAY/PLAY.runs/synth_1/.Xil/Vivado-5208-PC-Kowalski/dcp/xadc_1_in_context.xdc] for cell 'AD1'
+Finished Parsing XDC File [M:/Xilinx/projects/PLAY/PLAY.runs/synth_1/.Xil/Vivado-5208-PC-Kowalski/dcp/xadc_1_in_context.xdc] for cell 'AD1'
+Parsing XDC File [M:/Xilinx/projects/PLAY/PLAY.srcs/constrs_1/new/DECODE.xdc]
+Finished Parsing XDC File [M:/Xilinx/projects/PLAY/PLAY.srcs/constrs_1/new/DECODE.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/Xilinx/projects/PLAY/PLAY.srcs/constrs_1/new/DECODE.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/decode_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/decode_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 654.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 654.516 ; gain = 444.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 654.516 ; gain = 444.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 654.516 ; gain = 444.789
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "test" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clear" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 654.516 ; gain = 444.789
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 3     
+	   3 Input     36 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 5     
+	               20 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                10x27  Multipliers := 1     
+	                 7x30  Multipliers := 1     
+	                 4x33  Multipliers := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 3     
+	   3 Input     36 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input      4 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               36 Bit    Registers := 5     
+	               20 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                10x27  Multipliers := 1     
+	                 7x30  Multipliers := 1     
+	                 4x33  Multipliers := 1     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 13    
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'frel_reg[35:0]' into 'frel_reg[35:0]' [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:167]
+INFO: [Synth 8-4471] merging register 'frel_reg[35:0]' into 'frel_reg[35:0]' [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:167]
+INFO: [Synth 8-4471] merging register 'frel_reg[35:0]' into 'frel_reg[35:0]' [M:/Xilinx/projects/PLAY/PLAY.srcs/sources_1/new/decode.v:167]
+INFO: [Synth 8-5545] ROM "clear" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "test" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP show131, operation Mode is: C'-A*(B:0x2710).
+DSP Report: register frel_reg is absorbed into DSP show131.
+DSP Report: operator show131 is absorbed into DSP show131.
+DSP Report: operator show132 is absorbed into DSP show131.
+DSP Report: Generating DSP show131, operation Mode is: C'-A*(B:0x186a0).
+DSP Report: register frel_reg is absorbed into DSP show131.
+DSP Report: operator show131 is absorbed into DSP show131.
+DSP Report: operator show132 is absorbed into DSP show131.
+DSP Report: Generating DSP show131, operation Mode is: C'-(A:0xf4240)*B.
+DSP Report: register frel_reg is absorbed into DSP show131.
+DSP Report: operator show131 is absorbed into DSP show131.
+DSP Report: operator show132 is absorbed into DSP show131.
+WARNING: [Synth 8-3331] design decode has unconnected port error
+INFO: [Synth 8-3886] merging instance 'dot1_reg[3]' (FDE) to 'out_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dot1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_out2_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (dot1_reg[0]) is unused and will be removed from module decode.
+WARNING: [Synth 8-3332] Sequential element (display_out2_reg[11]) is unused and will be removed from module decode.
+INFO: [Synth 8-3886] merging instance 'display_out2_reg[7]' (FDE) to 'display_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'display_out2_reg[8]' (FDE) to 'display_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'display_out2_reg[9]' (FDE) to 'display_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'display_out2_reg[10]' (FDE) to 'display_out_reg[10]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 681.770 ; gain = 472.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|decode      | C'-A*(B:0x2710)  | 23     | 14     | 36     | -      | 36     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
+|decode      | C'-A*(B:0x186a0) | 20     | 17     | 36     | -      | 36     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
+|decode      | C'-(A:0xf4240)*B | 20     | 17     | 36     | -      | 36     | 0    | 0    | 1    | -    | -     | 0    | 0    | 
++------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 809.801 ; gain = 600.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 819.383 ; gain = 609.656
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin dwe_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin reset_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module AD1 has unconnected pin vn_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_1        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |xadc_1  |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |  1869|
+|4     |DSP48E1 |     3|
+|5     |LUT1    |   760|
+|6     |LUT2    |  2265|
+|7     |LUT3    |  3197|
+|8     |LUT4    |  1998|
+|9     |LUT5    |   853|
+|10    |LUT6    |  2893|
+|11    |MUXF7   |    26|
+|12    |FDRE    |   333|
+|13    |IBUF    |    12|
+|14    |OBUF    |    38|
+|15    |OBUFT   |     1|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 14275|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 948.398 ; gain = 738.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 20 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 948.398 ; gain = 403.797
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:10 . Memory (MB): peak = 948.398 ; gain = 738.672
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1884 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'decode' is not ideal for floorplanning, since the cellview 'decode' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 9 Warnings, 20 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 948.398 ; gain = 702.090
+INFO: [Common 17-1381] The checkpoint 'M:/Xilinx/projects/PLAY/PLAY.runs/synth_1/decode.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 948.398 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 09 16:56:18 2017...

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 09 16:55:58 2017
+# Process ID: 9536
+# Current directory: E:/vivado_experiment/vivado_adc
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11568 E:\vivado_experiment\vivado_adc\vivado_adc.xpr
+# Log file: E:/vivado_experiment/vivado_adc/vivado.log
+# Journal file: E:/vivado_experiment/vivado_adc\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_experiment/vivado_adc/vivado_adc.xpr
+INFO: [Project 1-313] Project file moved from 'D:/vivado_experiment/vivado_adc' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/vivado_experiment/vivado_adc/xilinx.com_user_smg_display_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'M:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 867.684 ; gain = 129.410
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1

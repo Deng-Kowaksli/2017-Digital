@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1493705657">
+  <File Type="RDS-PROPCONSTRS" Name="adda_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="adda.tcl"/>
+  <File Type="RDS-RDS" Name="adda.vds"/>
+  <File Type="RDS-UTIL" Name="adda_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="adda_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="adda.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="adda_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="adda_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/adda.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="adda"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../PLAY/PLAY.srcs/constrs_1/new/DECODE.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../PLAY/PLAY.srcs/constrs_1/new/DECODE.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="xadc_wiz_0"/>
+</GenRun>

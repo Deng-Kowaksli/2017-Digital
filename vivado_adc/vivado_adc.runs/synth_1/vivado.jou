@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Mar 21 09:42:30 2017
+# Process ID: 13276
+# Current directory: D:/vivado_experiment/vivado_adc/vivado_adc.runs/synth_1
+# Command line: vivado.exe -log vivado_adc.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vivado_adc.tcl
+# Log file: D:/vivado_experiment/vivado_adc/vivado_adc.runs/synth_1/vivado_adc.vds
+# Journal file: D:/vivado_experiment/vivado_adc/vivado_adc.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vivado_adc.tcl -notrace

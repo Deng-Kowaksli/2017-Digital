@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Sat Mar 18 00:43:45 2017
+# Process ID: 9884
+# Current directory: M:/Xilinx/projects/4digits_add/4digits_add.runs/impl_2
+# Command line: vivado.exe -log digits_add.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source digits_add.tcl -notrace
+# Log file: M:/Xilinx/projects/4digits_add/4digits_add.runs/impl_2/digits_add.vdi
+# Journal file: M:/Xilinx/projects/4digits_add/4digits_add.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source digits_add.tcl -notrace

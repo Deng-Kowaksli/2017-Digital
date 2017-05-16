@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file M:\Xilinx\projects\4digits_add\4digits_add.runs\impl_2/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

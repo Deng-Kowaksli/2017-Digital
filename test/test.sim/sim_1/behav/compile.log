@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Xilinx/projects/test/test.srcs/sim_1/new/test_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "M:/Xilinx/projects/test/test.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
