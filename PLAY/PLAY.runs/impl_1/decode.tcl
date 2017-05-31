@@ -49,11 +49,11 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
   open_checkpoint decode_routed.dcp
   set_property webtalk.parent_dir M:/Xilinx/projects/PLAY/PLAY.cache/wt [current_project]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force decode.mmi }
-  write_bitstream -force -no_partial_bitfile decode.bit -bin_file
+  write_bitstream -force -no_partial_bitfile decode.bit 
   catch { write_sysdef -hwdef decode.hwdef -bitfile decode.bit -meminfo decode.mmi -file decode.sysdef }
   catch {write_debug_probes -quiet -force debug_nets}
   close_msg_db -file write_bitstream.pb

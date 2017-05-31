@@ -101,3 +101,7 @@ set_property src_info {type:XDC file:1 line:112 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN H2 [get_ports {display_out2[11]}]
 set_property src_info {type:XDC file:1 line:129 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN C12 [get_ports adin]
+set_property src_info {type:XDC file:1 line:131 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A13 [get_ports tx]
+set_property src_info {type:XDC file:1 line:134 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B18 [get_ports Serialtest]

@@ -1,22 +1,22 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+// Company:
+// Engineer:
+//
 // Create Date: 2017/03/19 16:22:48
-// Design Name: 
+// Design Name:
 // Module Name: decode
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
+// Project Name:
+// Target Devices:
+// Tool Versions:
+// Description:
+//
+// Dependencies:
+//
 // Revision:
 // Revision 0.01 - File Created
 // Additional Comments:
-// 
+//
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -32,7 +32,8 @@ module decode(
     output reg test,
     output reg[11:0] display_out,
     output reg[11:0] display_out2,
-    //output reg tx,
+    output reg tx,
+    output reg Serialtest,
     //output reg[2:0] digits,
     input button,
     input siginal
@@ -61,16 +62,24 @@ module decode(
     reg [20:0]finfre;
     reg [35:0]count1;
     reg [20:0]counts;
+    reg [9:0]SerialBuffer[1:8];
+    reg [10:0]SerialCount;
+    reg [10:0]fortime;
     reg sigin;
     reg zero;
     reg clear;
+    reg send;
     wire clks;
     reg [4:0]sseq;
     reg [9:0]txseq;
     wire [15:0]outdata;
     reg [11:0]voltage;
+    reg [4:0]SerialSend;
+    reg [4:0]SerialSend2;
+    reg [10:0]SerialClk;
     parameter addr = 'h11;
     xadc_1 AD1(.vauxp1(adin),.vauxn1(0),.do_out(outdata),.daddr_in(addr),.dclk_in(CLK),.den_in(1));
+    clk_wiz_0 CLK1(.clk_in(CLK),.clk_out(clk_Serial));
     always@(*)
     begin
         digit[0] <= 7'b1111110;
@@ -92,7 +101,7 @@ module decode(
             1:display_out<=dot1[1]<<11|4'b0010<<7|digit[show12];
             2:display_out<=dot1[2]<<11|4'b0100<<7|digit[show13];
             3:display_out<=dot1[3]<<11|4'b1000<<7|digit[show14];
-        endcase  
+        endcase
         case(sel)
             0:display_out2<=dot[0]<<11|4'b0001<<7|digit[show1];
             1:display_out2<=dot[1]<<11|4'b0010<<7|digit[show2];
@@ -141,7 +150,7 @@ module decode(
             show3 <= (voltage-voltage/1000*1000)/100;
             show2 <= (voltage-voltage/100*100)/10;
             show1 <= voltage-voltage/10*10;
-            
+
         end
     always@(posedge CLK)
     begin
@@ -182,6 +191,15 @@ module decode(
         show11 <= (frel-frel/10000*10000)/1000;
         dot1 <= 4'b1000;
         out <= 3'b100;
+        SerialBuffer[5] <= show14+48;
+        SerialBuffer[4] <= 46;
+        SerialBuffer[3] <= show13+48;
+        SerialBuffer[2] <= show12+48;
+        SerialBuffer[1] <= show11+48;
+        if(send)
+        SerialSend <= 5;
+        else
+        SerialSend <= 0;
         end
         else if(frel>=100_000)
         begin
@@ -194,6 +212,15 @@ module decode(
         show11 <= (frel-frel/1000*1000)/100;
         dot1 <= 4'b0010;
         out <= 3'b010;
+        SerialBuffer[5] <= show14+48;
+        SerialBuffer[2] <= 46;
+        SerialBuffer[4] <= show13+48;
+        SerialBuffer[3] <= show12+48;
+        SerialBuffer[1] <= show11+48;
+        if(send)
+        SerialSend <= 5;
+        else
+        SerialSend <= 0;
         end
         else if(frel>=10_000)
         begin
@@ -206,6 +233,15 @@ module decode(
         show11 <= (frel-frel/100*100)/10;
         dot1 <= 4'b0100;
         out <= 3'b010;
+        SerialBuffer[5] <= show14+48;
+        SerialBuffer[3] <= 46;
+        SerialBuffer[4] <= show13+48;
+        SerialBuffer[2] <= show12+48;
+        SerialBuffer[1] <= show11+48;
+        if(send)
+        SerialSend <= 5;
+        else
+        SerialSend <= 0;
         end
         else
         begin
@@ -215,6 +251,15 @@ module decode(
         show11 <= frel-frel/10*10;
         dot1 <= 4'b0000;
         out <= 3'b001;
+        SerialBuffer[4] <= show14+48;
+        //SerialBuffer[3] <= 46;
+        SerialBuffer[3] <= show13+48;
+        SerialBuffer[2] <= show12+48;
+        SerialBuffer[1] <= show11+48;
+        if(send)
+        SerialSend <= 4;
+        else
+        SerialSend <= 0;
         end
     end
     if(clear == 1)
@@ -222,5 +267,48 @@ module decode(
         clear <= 0;
         frel <= 0;
     end
+    end
+    always@(posedge clk_Serial)
+    begin
+    if(SerialSend != 0)
+        SerialSend2 <= SerialSend;
+        if(SerialClk == 100)
+        begin
+            Serialtest <= ~Serialtest;
+            if(SerialSend2 != 0)
+            begin
+            send <= 0;
+                if(SerialCount == 10)
+                begin
+                    SerialCount <= 0;
+                    SerialSend2 <= SerialSend2 - 1;
+                end
+                else if(SerialCount == 0)
+                begin
+                    SerialCount <= SerialCount + 1;
+                    tx <= 1;
+                end
+                else if(SerialCount == 9)
+                begin
+                    SerialCount <= SerialCount + 1;
+                    tx <= 0;
+                end
+                else
+                begin
+                    SerialCount <= SerialCount + 1;
+                    tx <= SerialBuffer[SerialSend][SerialCount-1];
+                end
+            end
+            else
+            begin
+                send <= 1;
+                tx <= 0;
+            end
+        SerialClk <= 0;
+        end
+        else
+        begin
+            SerialClk <= SerialClk + 1;
+        end
     end
 endmodule

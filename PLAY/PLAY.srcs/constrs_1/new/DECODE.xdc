@@ -127,3 +127,9 @@ set_property IOSTANDARD LVCMOS33 [get_ports {display_out2[11]}]
 
 set_property IOSTANDARD LVCMOS33 [get_ports adin]
 set_property PACKAGE_PIN C12 [get_ports adin]
+
+set_property PACKAGE_PIN A13 [get_ports tx]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
+
+set_property PACKAGE_PIN B18 [get_ports Serialtest]
+set_property IOSTANDARD LVCMOS33 [get_ports Serialtest]
