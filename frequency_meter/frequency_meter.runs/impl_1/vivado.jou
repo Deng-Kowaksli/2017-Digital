@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue May 09 20:27:19 2017
+# Process ID: 1112
+# Current directory: C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1
+# Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
+# Log file: C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.vdi
+# Journal file: C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

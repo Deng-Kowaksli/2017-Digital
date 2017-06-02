@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue May 23 14:50:33 2017
+# Process ID: 1260
+# Current directory: E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent916 E:\文件\大二下\电子技术基础数字部分\作业\17.5.9\frequency_meter\frequency_meter.xpr
+# Log file: E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter/vivado.log
+# Journal file: E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter/frequency_meter.xpr

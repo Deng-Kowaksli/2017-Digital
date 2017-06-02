@@ -1,0 +1,100 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+Process ID: 10088
+
+Current time: 	6/1/17 10:31:26 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=宋体,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.4/tps/win64/jre
+
+User name: 	CMT
+User home directory: C:/Users/Think
+User working directory: E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.4/data
+RDI bin directory: C:/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: C:/Users/Think/AppData/Roaming/Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: C:/Users/Think/AppData/Roaming/Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	216 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 448 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 42 MB (+41077kb) [00:00:09]
+// [Engine Memory]: 400 MB (+268290kb) [00:00:09]
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: E:\文件\大二下\电子技术基础数字部分\作业\17.5.9\frequency_meter\frequency_meter.xpr. Version: Vivado v2016.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter/frequency_meter.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter/frequency_meter.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Think/Desktop/17.5.9/frequency_meter' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 50 MB (+6428kb) [00:00:12]
+// [Engine Memory]: 449 MB (+30488kb) [00:00:12]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 53 MB (+990kb) [00:00:15]
+// [Engine Memory]: 539 MB (+70614kb) [00:00:15]
+// [GUI Memory]: 66 MB (+10282kb) [00:00:18]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 556 MB. GUI used memory: 34 MB. Current time: 6/1/17 10:31:35 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 817.688 ; gain = 141.133 
+// Project name: frequency_meter; location: E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter; part: xc7a35tcsg324-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v)]", 1); // y:i (D:JPanel, cd:JFrame)
+// [Engine Memory]: 571 MB (+5049kb) [00:00:26]
+// PAPropertyPanels.initPanels (frequencybcd.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), fun2 - frequencybcd (frequencybcd.v)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, main (main.v), fun2 - frequencybcd (frequencybcd.v)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H:a (Workspace:JPanel, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 584 MB. GUI used memory: 35 MB. Current time: 6/1/17 10:31:59 PM CST
+// Elapsed time: 13 seconds
+selectCodeEditor("frequencybcd.v", 0, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("frequencybcd.v", 124, 450); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("frequencybcd.v", 212, 289, false, false, false, true, false); // bF:I (JPanel:JComponent, cd:JFrame) - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // T:JideMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // T:JideMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // T:JideMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // T:JideMenu (ah:JPopupMenu, Popup:JWindow)
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ah:JPopupMenu, Popup:JWindow)
+closeMainWindow("frequency_meter - [E:/文件/大二下/电子技术基础数字部分/作业/17.5.9/frequency_meter/frequency_meter.xpr] - Vivado 2016.4"); // cd:JFrame
+// y:aO (cd:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Exit Vivado"); // y:aO (cd:JFrame)

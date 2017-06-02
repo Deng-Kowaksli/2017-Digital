@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue May 09 18:15:46 2017
+# Process ID: 2756
+# Current directory: C:/Users/Think/Desktop/17.5.9/frequency_meter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11688 C:\Users\Think\Desktop\17.5.9\frequency_meter\frequency_meter.xpr
+# Log file: C:/Users/Think/Desktop/17.5.9/frequency_meter/vivado.log
+# Journal file: C:/Users/Think/Desktop/17.5.9/frequency_meter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0002.Hub_#0002]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0002.Hub_#0002]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0002.Hub_#0002]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0002.Hub_#0002]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+file mkdir C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.srcs/sim_1/new/test.v w ]
+add_files -fileset sim_1 C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.srcs/sim_1/new/test.v
+launch_simulation
+source main.tcl
+restart
+run 720 ns
+restart
+run all
+add_wave {{/main/ntl}} 
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+close_sim
+launch_simulation
+source test.tcl
+restart
+run all
+close_sim
+launch_simulation
+source test.tcl
+restart
+run all
+restart
+run all
+restart
+run all
+restart
+run 100 ns
+restart
+run 100 us
+close_sim
+launch_simulation
+source test.tcl
+run 100 us
+close_sim
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

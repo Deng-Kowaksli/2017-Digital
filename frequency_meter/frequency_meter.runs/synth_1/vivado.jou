@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue May 09 20:26:04 2017
+# Process ID: 9660
+# Current directory: C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/synth_1/main.vds
+# Journal file: C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace

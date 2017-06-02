@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue May 16 13:24:01 2017
+# Process ID: 10532
+# Current directory: C:/Users/Think/Desktop/17.5.9/frequency_meter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8316 C:\Users\Think\Desktop\17.5.9\frequency_meter\frequency_meter.xpr
+# Log file: C:/Users/Think/Desktop/17.5.9/frequency_meter/vivado.log
+# Journal file: C:/Users/Think/Desktop/17.5.9/frequency_meter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.xpr
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0002]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0002]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0002]
+set_property PARAM.FREQUENCY 6000000 [get_hw_targets */xilinx_tcf/Xilinx/Port_#0001.Hub_#0002]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/Think/Desktop/17.5.9/frequency_meter/frequency_meter.runs/impl_1/main.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
