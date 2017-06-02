@@ -1,9 +1,9 @@
 `timescale 1ns / 1ps
 module frequency2binary(
-  input siginal,
+  input siginal,//输入信号管脚
   input CLK,
-  output reg sign1,
-  output reg [20:0]finfre
+  output reg sign1,//信号示意
+  output reg [20:0]finfre//binary频率输出
   );
   parameter T2MS=100000000;
       reg [35:0]freh;

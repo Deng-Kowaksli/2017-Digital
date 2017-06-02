@@ -1,33 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2017/06/02 22:21:37
-// Design Name: 
+
+// Engineer: 邓剡梁
 // Module Name: 7digits
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: 该模块用于驱动数码管，两段数码管可分别驱动。
+
 //////////////////////////////////////////////////////////////////////////////////
 
 
 module led_digits(
-    output reg[11:0] display_out1,
-    output reg[11:0] display_out2,
+    output reg[11:0] display_out1,//第一组数码管管脚
+    output reg[11:0] display_out2,//第二组数码管管脚
     input CLK,
-    input [15:0] show_num_1,
-    input [3:0] dot1,
-    input [15:0] show_num_2,
-    input [3:0] dot2
+    input [15:0] show_num_1,//第一组数字bcd码
+    input [3:0] dot1,//第一组数字小数点
+    input [15:0] show_num_2,//第二组数字bcd码
+    input [3:0] dot2//第二组数字小数点
     );
     reg [6:0]digit[0:9];
     reg [2:0] sel;

@@ -34,6 +34,11 @@ module main(
     input button,
     input siginal
     );
-    led_digits shownum(.CLK(CLK),.show_num_1('b0111010101100001),.dot1('b0001),.show_num_2(0),.dot2(0),.display_out1(display_out),.display_out2(display_out2));
+    parameter toshow = 32343;
+    wire [27:0]wire1;
+    wire [15:0]wire2;
+    binary2bcd Binary2bcd(.CLK(CLK),.binaryin(toshow),.bcdout(wire1));
+    bcd_4round Bce_round(.bcd_in(wire1),.bcd_out(wire2));
+    led_digits shownum(.CLK(CLK),.show_num_1(wire2),.dot1('b0001),.show_num_2(0),.dot2(0),.display_out1(display_out),.display_out2(display_out2));
     
 endmodule

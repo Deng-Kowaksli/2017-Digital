@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 module binary2bcd(
     input CLK,
-    input [23:0] binaryin,
-    (* KEEP = "TRUE" *)output reg [27:0] bcdout
+    input [23:0] binaryin,//二进制数输入
+    (* KEEP = "TRUE" *)output reg [27:0] bcdout//7位十进制输出
 //    ,(* KEEP = "TRUE" *)output reg [28:0] bcd
 //    ,(* KEEP = "TRUE" *)output reg [4:0] count
     );

@@ -21,10 +21,10 @@
 
 
 module analogfre2binary(
-  input [11:0]siginal,
+  input [11:0]siginal,//ad输出数据输入
   input CLK,
-  output reg sign1,
-  output reg [20:0]finfre
+  output reg sign1,//整形后输出
+  output reg [20:0]finfre//binary频率输出
   );
   parameter T2MS=100000000;
       reg [35:0]freh;

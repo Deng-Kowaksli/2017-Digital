@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Sat Jun 03 00:28:18 2017
+| Date             : Sat Jun 03 00:50:55 2017
 | Host             : PC-Kowalski running 64-bit major release  (build 9200)
 | Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
 | Design           : main
@@ -30,12 +30,12 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 0.228 |
-| Dynamic (W)              | 0.156 |
-| Device Static (W)        | 0.072 |
+| Total On-Chip Power (W)  | 8.071 |
+| Dynamic (W)              | 7.960 |
+| Device Static (W)        | 0.111 |
 | Effective TJA (C/W)      | 4.8   |
-| Max Ambient (C)          | 83.9  |
-| Junction Temperature (C) | 26.1  |
+| Max Ambient (C)          | 46.4  |
+| Junction Temperature (C) | 63.6  |
 | Confidence Level         | Low   |
 | Setting File             | ---   |
 | Simulation Activity File | ---   |
@@ -49,16 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.067 |       66 |       --- |             --- |
-|   LUT as Logic |     0.035 |       13 |     20800 |            0.06 |
-|   CARRY4       |     0.015 |        5 |      8150 |            0.06 |
-|   Register     |     0.012 |       38 |     41600 |            0.09 |
+| Slice Logic    |     0.424 |      260 |       --- |             --- |
+|   LUT as Logic |     0.364 |      114 |     20800 |            0.55 |
+|   Register     |     0.043 |      116 |     41600 |            0.28 |
+|   CARRY4       |     0.011 |        5 |      8150 |            0.06 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.085 |       58 |       --- |             --- |
-| I/O            |     0.004 |       40 |       210 |           19.05 |
-| Static Power   |     0.072 |          |           |                 |
-| Total          |     0.228 |          |           |                 |
+|   F7/F8 Muxes  |    <0.001 |        8 |     32600 |            0.02 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |     0.434 |      178 |       --- |             --- |
+| I/O            |     7.102 |       40 |       210 |           19.05 |
+| Static Power   |     0.111 |          |           |                 |
+| Total          |     8.071 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,16 +69,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.166 |       0.156 |      0.010 |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
+| Vccint    |       1.000 |     0.904 |       0.862 |      0.042 |
+| Vccaux    |       1.800 |     0.276 |       0.260 |      0.016 |
+| Vcco33    |       3.300 |     2.010 |       2.009 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -132,11 +133,12 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------+-----------+
-| Name      | Power (W) |
-+-----------+-----------+
-| main      |     0.156 |
-|   shownum |     0.139 |
-+-----------+-----------+
++--------------+-----------+
+| Name         | Power (W) |
++--------------+-----------+
+| main         |     7.960 |
+|   Binary2bcd |     0.650 |
+|   shownum    |     0.191 |
++--------------+-----------+
 
 

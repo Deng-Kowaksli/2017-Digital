@@ -14,23 +14,30 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12788 
+INFO: Helper process launched with PID 9768 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 324.418 ; gain = 114.082
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 324.145 ; gain = 113.539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'main' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:23]
+	Parameter toshow bound to: 32343 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'binary2bcd' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:2]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:9]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:10]
+INFO: [Synth 8-256] done synthesizing module 'binary2bcd' (1#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:2]
+INFO: [Synth 8-638] synthesizing module 'bcd_4round' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v:23]
+INFO: [Synth 8-256] done synthesizing module 'bcd_4round' (2#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v:23]
 INFO: [Synth 8-638] synthesizing module 'led_digits' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:23]
 	Parameter T1MS bound to: 50000 - type: integer 
 INFO: [Synth 8-155] case statement is not full and has no default [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:70]
 INFO: [Synth 8-155] case statement is not full and has no default [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:76]
-INFO: [Synth 8-256] done synthesizing module 'led_digits' (1#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:23]
+INFO: [Synth 8-256] done synthesizing module 'led_digits' (3#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:23]
 WARNING: [Synth 8-3848] Net show in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:26]
 WARNING: [Synth 8-3848] Net out in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:27]
 WARNING: [Synth 8-3848] Net error in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:28]
 WARNING: [Synth 8-3848] Net sign in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:29]
 WARNING: [Synth 8-3848] Net sign1 in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:30]
 WARNING: [Synth 8-3848] Net test in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:31]
-INFO: [Synth 8-256] done synthesizing module 'main' (2#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-256] done synthesizing module 'main' (4#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:23]
 WARNING: [Synth 8-3331] design main has unconnected port show[7]
 WARNING: [Synth 8-3331] design main has unconnected port show[6]
 WARNING: [Synth 8-3331] design main has unconnected port show[5]
@@ -57,7 +64,7 @@ WARNING: [Synth 8-3331] design main has unconnected port in[0]
 WARNING: [Synth 8-3331] design main has unconnected port button
 WARNING: [Synth 8-3331] design main has unconnected port siginal
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 360.773 ; gain = 150.438
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 361.453 ; gain = 150.848
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -67,7 +74,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 360.773 ; gain = 150.438
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 361.453 ; gain = 150.848
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -83,26 +90,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 653.324 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 653.988 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "bcdout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -116,17 +124,24 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     20 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 10    
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
 	               12 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
 	   4 Input     12 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 7     
 	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -135,6 +150,24 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module binary2bcd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 7     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 1     
+Module bcd_4round 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
 Module led_digits 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -198,46 +231,26 @@ WARNING: [Synth 8-3331] design main has unconnected port siginal
 INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[1]' (FD) to 'shownum/show24_reg[3]'
 INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[0]' (FD) to 'shownum/show24_reg[3]'
 INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[2]' (FD) to 'shownum/show24_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[3]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show14_reg[1]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show14_reg[0]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show14_reg[2]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show14_reg[3]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show12_reg[1]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show12_reg[0]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show12_reg[2]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show12_reg[3]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show13_reg[1]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show13_reg[0]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show13_reg[2]' (FD) to 'shownum/show11_reg[0]'
-INFO: [Synth 8-3886] merging instance 'shownum/show13_reg[3]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show11_reg[1]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\shownum/show11_reg[0] )
-INFO: [Synth 8-3886] merging instance 'shownum/show11_reg[2]' (FD) to 'shownum/show11_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/show11_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/show24_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/display_out2_reg[11] )
 INFO: [Synth 8-3886] merging instance 'shownum/display_out1_reg[7]' (FDE) to 'shownum/display_out1_reg[11]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[11]' (FDE) to 'shownum/display_out2_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/display_out2_reg[0] )
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[1]' (FDE) to 'shownum/display_out1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[2]' (FDE) to 'shownum/display_out1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[3]' (FDE) to 'shownum/display_out1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[4]' (FDE) to 'shownum/display_out1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[5]' (FDE) to 'shownum/display_out1_reg[4]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[6]' (FDE) to 'shownum/display_out1_reg[4]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\shownum/display_out1_reg[4] )
-INFO: [Synth 8-3886] merging instance 'shownum/display_out1_reg[0]' (FDE) to 'shownum/display_out1_reg[1]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out1_reg[1]' (FDE) to 'shownum/display_out1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[1]' (FDE) to 'shownum/display_out2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[2]' (FDE) to 'shownum/display_out2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[3]' (FDE) to 'shownum/display_out2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[4]' (FDE) to 'shownum/display_out2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[5]' (FDE) to 'shownum/display_out2_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\shownum/display_out2_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (shownum/show24_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (shownum/display_out2_reg[6]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (shownum/display_out2_reg[0]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (shownum/show11_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (shownum/show11_reg[0]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (shownum/display_out1_reg[4]) is unused and will be removed from module main.
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[7]' (FDE) to 'shownum/display_out1_reg[11]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[8]' (FDE) to 'shownum/display_out1_reg[8]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[9]' (FDE) to 'shownum/display_out1_reg[9]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[10]' (FDE) to 'shownum/display_out1_reg[10]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -252,10 +265,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,9 +279,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'shownum/display_out1_reg[2]' (FDE) to 'shownum/display_out1_reg[8]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,7 +304,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -305,7 +317,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -317,25 +329,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -353,30 +365,33 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |     5|
-|3     |LUT1   |    21|
-|4     |LUT2   |     7|
-|5     |LUT3   |     1|
-|6     |LUT4   |     7|
-|7     |LUT5   |     1|
-|8     |FDRE   |    30|
-|9     |IBUF   |     1|
-|10    |OBUF   |    24|
-|11    |OBUFT  |    15|
+|3     |LUT1   |    22|
+|4     |LUT2   |     5|
+|5     |LUT3   |     5|
+|6     |LUT4   |    55|
+|7     |LUT5   |    28|
+|8     |LUT6   |    29|
+|9     |MUXF7  |     8|
+|10    |FDRE   |   112|
+|11    |IBUF   |     1|
+|12    |OBUF   |    24|
+|13    |OBUFT  |    15|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+----------+-----------+------+
-|      |Instance  |Module     |Cells |
-+------+----------+-----------+------+
-|1     |top       |           |   113|
-|2     |  shownum |led_digits |    72|
-+------+----------+-----------+------+
++------+-------------+-----------+------+
+|      |Instance     |Module     |Cells |
++------+-------------+-----------+------+
+|1     |top          |           |   310|
+|2     |  Binary2bcd |binary2bcd |   145|
+|3     |  shownum    |led_digits |   124|
++------+-------------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 653.324 ; gain = 442.988
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.988 ; gain = 443.383
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 653.324 ; gain = 112.391
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.324 ; gain = 442.988
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 653.988 ; gain = 112.129
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 653.988 ; gain = 443.383
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -386,9 +401,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-63 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+52 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 653.324 ; gain = 413.609
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 653.988 ; gain = 414.008
 INFO: [Common 17-1381] The checkpoint 'M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.runs/synth_1/main.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 653.324 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 03 00:27:10 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 653.988 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 03 00:49:56 2017...

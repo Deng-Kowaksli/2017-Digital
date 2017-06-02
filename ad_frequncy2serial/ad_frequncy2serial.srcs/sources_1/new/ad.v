@@ -22,8 +22,8 @@
 
 module ad(
     input CLK,
-    input ad_input,
-    output reg [11:0] ad_output
+    input ad_input,//0通道管脚输入
+    output reg [11:0] ad_output//ad binary数据输出
     );
     parameter addr = 'h10;
     reg [15:0]outdata;
