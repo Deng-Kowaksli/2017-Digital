@@ -1,22 +1,10 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2017/06/02 23:54:21
-// Design Name: 
+
+// Engineer: 邓剡梁
 // Module Name: ad
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: ad，输入为0通道，输出12位binary。
+
 //////////////////////////////////////////////////////////////////////////////////
 
 

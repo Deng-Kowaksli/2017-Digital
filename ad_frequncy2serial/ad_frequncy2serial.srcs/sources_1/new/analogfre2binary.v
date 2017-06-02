@@ -1,22 +1,12 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
+
+// Engineer: 邓剡梁
 // Create Date: 2017/06/02 22:38:46
-// Design Name: 
 // Module Name: analogfre2binary
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
+// Description: 模拟频率计，输入ad采集的电平值，输出整型后的方波和模拟信号的频率值。
+// Waring: 测量范围0-1v。
+
 //////////////////////////////////////////////////////////////////////////////////
 
 
@@ -46,13 +36,13 @@ always@(posedge CLK)
           sign1 <= 1;
           frell <= frell + 1;
           freh <= 0;
-          if(frell==25)
+          if(frell==50)
           begin
           frell <=0;
           zero <=1;
           end
       end
-      if(freh==25&&zero==1)
+      if(freh==50&&zero==1)
       begin
           frel <= frel+1;
           zero <=0;
