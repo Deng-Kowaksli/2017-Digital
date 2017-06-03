@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Mon May 15 11:53:30 2017
+# Process ID: 8140
+# Current directory: D:/vivado_experiment/vivado_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12744 D:\vivado_experiment\vivado_uart\vivado_uart.xpr
+# Log file: D:/vivado_experiment/vivado_uart/vivado.log
+# Journal file: D:/vivado_experiment/vivado_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_experiment/vivado_uart/vivado_uart.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.4
+  **** Build date : Dec 14 2016-22:58:11
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+ERROR: [Labtoolstcl 44-469] There is no current hw_target.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 15 11:55:29 2017...

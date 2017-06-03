@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date         : Sat Jun 03 01:15:04 2017
+| Date         : Sat Jun 03 17:37:06 2017
 | Host         : PC-Kowalski running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     5 |
-| Unused register locations in slices containing registers |    20 |
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    54 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,33 +33,43 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              19 |           12 |
+| No           | No                    | No                     |              51 |           21 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              53 |           15 |
-| Yes          | No                    | No                     |              44 |           15 |
+| No           | Yes                   | No                     |             194 |           58 |
+| Yes          | No                    | No                     |             112 |           39 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              21 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+----------------------------------+-----------------------+------------------+----------------+
-|  Clock Signal  |           Enable Signal          |    Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+----------------+----------------------------------+-----------------------+------------------+----------------+
-|  CLK_IBUF_BUFG | shownum/display_out1[11]_i_1_n_0 |                       |                7 |             16 |
-|  CLK_IBUF_BUFG |                                  |                       |               12 |             19 |
-|  CLK_IBUF_BUFG |                                  | shownum/sel           |                6 |             20 |
-|  CLK_IBUF_BUFG | Binary2bcd/bcdout_n_0            |                       |                8 |             28 |
-|  CLK_IBUF_BUFG |                                  | Binary2bcd/bcdout_n_0 |                9 |             33 |
-+----------------+----------------------------------+-----------------------+------------------+----------------+
++----------------+----------------------------------+---------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+---------------------------------+------------------+----------------+
+|  CLK_IBUF_BUFG | ADC1/ad_max0_carry__0_n_2        |                                 |                3 |             12 |
+|  CLK_IBUF_BUFG | ADC1/ad_min0_carry__0_n_2        |                                 |                3 |             12 |
+|  CLK_IBUF_BUFG | Binary2bcd2/count[4]_i_1__0_n_0  |                                 |                6 |             16 |
+|  CLK_IBUF_BUFG |                                  | shownum/sel                     |                6 |             20 |
+|  CLK_IBUF_BUFG | Analogfre/count1[35]_i_1_n_0     |                                 |                5 |             21 |
+|  CLK_IBUF_BUFG | Analogfre/freh1                  | Analogfre/clear                 |                6 |             21 |
+|  CLK_IBUF_BUFG | shownum/display_out1[11]_i_1_n_0 |                                 |               14 |             23 |
+|  CLK_IBUF_BUFG | Binary2bcd/count[4]_i_1_n_0      |                                 |                8 |             28 |
+|  CLK_IBUF_BUFG |                                  | Binary2bcd/count[4]_i_1_n_0     |               12 |             33 |
+|  CLK_IBUF_BUFG |                                  | Binary2bcd2/count[4]_i_1__0_n_0 |               13 |             33 |
+|  CLK_IBUF_BUFG |                                  | Analogfre/count1[35]_i_1_n_0    |                9 |             35 |
+|  CLK_IBUF_BUFG |                                  | Analogfre/freh[0]_i_1_n_0       |                9 |             36 |
+|  CLK_IBUF_BUFG |                                  | ADC1/SR[0]                      |                9 |             37 |
+|  CLK_IBUF_BUFG |                                  |                                 |               21 |             51 |
++----------------+----------------------------------+---------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 16+    |                     5 |
+| 12     |                     2 |
+| 16+    |                    12 |
 +--------+-----------------------+
 
 

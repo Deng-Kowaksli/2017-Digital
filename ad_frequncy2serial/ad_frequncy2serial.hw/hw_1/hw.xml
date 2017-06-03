@@ -11,5 +11,8 @@
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/main.bit"/>
     </Object>
   </ObjectList>
+  <ObjectList object_type="hw_sysmon" gui_info="">
+    <Object name="XADC" gui_info="dashboard_1=[VAUXP1_VAUXN1=-16711936;SCAN_RATE=1000;TRACK_TIME=1;]"/>
+  </ObjectList>
   <probeset name="hw project" active="false"/>
 </hwsession>

@@ -36,13 +36,13 @@ always@(posedge CLK)
           sign1 <= 1;
           frell <= frell + 1;
           freh <= 0;
-          if(frell==50)
+          if(frell==400)
           begin
           frell <=0;
           zero <=1;
           end
       end
-      if(freh==50&&zero==1)
+      if(freh==400&&zero==1)
       begin
           frel <= frel+1;
           zero <=0;

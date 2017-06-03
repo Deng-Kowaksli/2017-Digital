@@ -16,7 +16,11 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo m:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
+add_files -quiet m:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp
+set_property used_in_implementation false [get_files m:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/ip/xadc_wiz_0/xadc_wiz_0.dcp]
 read_verilog -library xil_defaultlib {
+  M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/analogfre2binary.v
+  M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/ad.v
   M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v
   M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v
   M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v

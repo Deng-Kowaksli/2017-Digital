@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Fri May 26 16:04:24 2017
+# Process ID: 8324
+# Current directory: D:/vivado_experiment/vivado_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11144 D:\vivado_experiment\vivado_uart\vivado_uart.xpr
+# Log file: D:/vivado_experiment/vivado_uart/vivado.log
+# Journal file: D:/vivado_experiment/vivado_uart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/vivado_experiment/vivado_uart/vivado_uart.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/vivado_experiment/vivado_uart/vivado_uart.runs/impl_1/uart_module.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {n25q32-3.3v-spi-x1_x2_x4}] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {D:/vivado_experiment/vivado_uart/vivado_uart.runs/impl_1/uart_module.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw

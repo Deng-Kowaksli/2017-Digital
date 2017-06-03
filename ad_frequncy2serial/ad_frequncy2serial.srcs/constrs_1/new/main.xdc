@@ -82,7 +82,6 @@ set_property IOSTANDARD LVCMOS33 [get_ports sign]
 set_property PACKAGE_PIN H5 [get_ports sign1]
 set_property IOSTANDARD LVCMOS33 [get_ports sign1]
 
-set_property PACKAGE_PIN D14 [get_ports siginal]
 set_property IOSTANDARD LVCMOS33 [get_ports siginal]
 
 set_property PACKAGE_PIN A15 [get_ports test]
@@ -92,3 +91,11 @@ set_property PACKAGE_PIN D5 [get_ports {display_out[11]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {display_out[11]}]
 set_property PACKAGE_PIN H2 [get_ports {display_out2[11]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {display_out2[11]}]
+
+set_property PACKAGE_PIN C12 [get_ports wheel]
+set_property IOSTANDARD LVCMOS33 [get_ports wheel]
+
+set_property PACKAGE_PIN D14 [get_ports adsiginal]
+set_property IOSTANDARD LVCMOS33 [get_ports adsiginal]
+
+set_property IOSTANDARD LVCMOS33 [get_ports adsiginaln]

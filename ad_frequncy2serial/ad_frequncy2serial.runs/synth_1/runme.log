@@ -14,30 +14,41 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13124 
+INFO: Helper process launched with PID 2224 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 324.164 ; gain = 113.914
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 324.137 ; gain = 113.934
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'main' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-638] synthesizing module 'main' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:11]
 	Parameter toshow bound to: 32343 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'binary2bcd' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:2]
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:9]
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:10]
-INFO: [Synth 8-256] done synthesizing module 'binary2bcd' (1#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:2]
-INFO: [Synth 8-638] synthesizing module 'bcd_4round' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v:23]
-INFO: [Synth 8-256] done synthesizing module 'bcd_4round' (2#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v:23]
+INFO: [Synth 8-638] synthesizing module 'binary2bcd' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:9]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:16]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:17]
+INFO: [Synth 8-256] done synthesizing module 'binary2bcd' (1#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/binary2bcd.v:9]
+WARNING: [Synth 8-689] width (21) of port connection 'binaryin' does not match port width (24) of module 'binary2bcd' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:40]
+INFO: [Synth 8-638] synthesizing module 'bcd_4round' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v:11]
+INFO: [Synth 8-256] done synthesizing module 'bcd_4round' (2#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/bcd_round.v:11]
+INFO: [Synth 8-638] synthesizing module 'ad' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/ad.v:11]
+	Parameter addr bound to: 16 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.runs/synth_1/.Xil/Vivado-13340-PC-Kowalski/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (3#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.runs/synth_1/.Xil/Vivado-13340-PC-Kowalski/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'AD1' of module 'xadc_wiz_0' requires 17 connections, but only 6 given [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/ad.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ad' (4#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/ad.v:11]
+WARNING: [Synth 8-350] instance 'ADC1' of module 'ad' requires 7 connections, but only 5 given [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:45]
+INFO: [Synth 8-638] synthesizing module 'analogfre2binary' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/analogfre2binary.v:13]
+	Parameter T2MS bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'analogfre2binary' (5#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/analogfre2binary.v:13]
 INFO: [Synth 8-638] synthesizing module 'led_digits' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:11]
 	Parameter T1MS bound to: 50000 - type: integer 
 INFO: [Synth 8-155] case statement is not full and has no default [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:58]
 INFO: [Synth 8-155] case statement is not full and has no default [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:64]
-INFO: [Synth 8-256] done synthesizing module 'led_digits' (3#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:11]
-WARNING: [Synth 8-3848] Net show in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:26]
-WARNING: [Synth 8-3848] Net out in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:27]
-WARNING: [Synth 8-3848] Net error in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:28]
-WARNING: [Synth 8-3848] Net sign in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:29]
-WARNING: [Synth 8-3848] Net sign1 in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:30]
-WARNING: [Synth 8-3848] Net test in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:31]
-INFO: [Synth 8-256] done synthesizing module 'main' (4#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-256] done synthesizing module 'led_digits' (6#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:11]
+WARNING: [Synth 8-689] width (28) of port connection 'show_num_2' does not match port width (16) of module 'led_digits' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:47]
+WARNING: [Synth 8-3848] Net show in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:13]
+WARNING: [Synth 8-3848] Net out in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:14]
+WARNING: [Synth 8-3848] Net error in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:15]
+WARNING: [Synth 8-3848] Net sign1 in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:17]
+WARNING: [Synth 8-3848] Net test in module/entity main does not have driver. [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:18]
+INFO: [Synth 8-256] done synthesizing module 'main' (7#1) [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/main.v:11]
 WARNING: [Synth 8-3331] design main has unconnected port show[7]
 WARNING: [Synth 8-3331] design main has unconnected port show[6]
 WARNING: [Synth 8-3331] design main has unconnected port show[5]
@@ -50,21 +61,13 @@ WARNING: [Synth 8-3331] design main has unconnected port out[2]
 WARNING: [Synth 8-3331] design main has unconnected port out[1]
 WARNING: [Synth 8-3331] design main has unconnected port out[0]
 WARNING: [Synth 8-3331] design main has unconnected port error
-WARNING: [Synth 8-3331] design main has unconnected port sign
 WARNING: [Synth 8-3331] design main has unconnected port sign1
 WARNING: [Synth 8-3331] design main has unconnected port test
-WARNING: [Synth 8-3331] design main has unconnected port in[7]
-WARNING: [Synth 8-3331] design main has unconnected port in[6]
-WARNING: [Synth 8-3331] design main has unconnected port in[5]
-WARNING: [Synth 8-3331] design main has unconnected port in[4]
-WARNING: [Synth 8-3331] design main has unconnected port in[3]
-WARNING: [Synth 8-3331] design main has unconnected port in[2]
-WARNING: [Synth 8-3331] design main has unconnected port in[1]
-WARNING: [Synth 8-3331] design main has unconnected port in[0]
 WARNING: [Synth 8-3331] design main has unconnected port button
+WARNING: [Synth 8-3331] design main has unconnected port wheel
 WARNING: [Synth 8-3331] design main has unconnected port siginal
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 361.473 ; gain = 151.223
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 360.551 ; gain = 150.348
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -74,13 +77,16 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 361.473 ; gain = 151.223
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 360.551 ; gain = 150.348
 ---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'xadc_wiz_0' instantiated as 'ADC1/AD1' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/ad.v:23]
 INFO: [Device 21-403] Loading part xc7a35tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
+Parsing XDC File [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.runs/synth_1/.Xil/Vivado-13340-PC-Kowalski/dcp/xadc_wiz_0_in_context.xdc] for cell 'ADC1/AD1'
+Finished Parsing XDC File [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.runs/synth_1/.Xil/Vivado-13340-PC-Kowalski/dcp/xadc_wiz_0_in_context.xdc] for cell 'ADC1/AD1'
 Parsing XDC File [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/constrs_1/new/main.xdc]
 Finished Parsing XDC File [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/constrs_1/new/main.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/constrs_1/new/main.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
@@ -90,28 +96,32 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 653.953 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 656.027 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 656.027 ; gain = 445.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 656.027 ; gain = 445.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 656.027 ; gain = 445.824
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "bcdout" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "dots" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ad_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "finfre" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 656.027 ; gain = 445.824
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -124,26 +134,33 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     36 Bit       Adders := 2     
 	   2 Input     20 Bit       Adders := 1     
-	   2 Input      5 Bit       Adders := 2     
-	   2 Input      4 Bit       Adders := 10    
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 17    
 	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               29 Bit    Registers := 1     
-	               28 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	               29 Bit    Registers := 2     
+	               28 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
 	               20 Bit    Registers := 1     
-	               12 Bit    Registers := 2     
-	                5 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 8     
 	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
 	   2 Input     20 Bit        Muxes := 1     
 	   2 Input     16 Bit        Muxes := 3     
 	   4 Input     12 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 14    
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -152,6 +169,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module binary2bcd 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -171,6 +192,26 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 3     
 	   4 Input      4 Bit        Muxes := 1     
+Module ad 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 4     
+	               11 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module analogfre2binary 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     36 Bit       Adders := 2     
++---Registers : 
+	               36 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
 Module led_digits 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -202,10 +243,15 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'shownum/show23_reg[3:0]' into 'shownum/show24_reg[3:0]' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:53]
-INFO: [Synth 8-4471] merging register 'shownum/show22_reg[3:0]' into 'shownum/show24_reg[3:0]' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:52]
-INFO: [Synth 8-4471] merging register 'shownum/show21_reg[3:0]' into 'shownum/show24_reg[3:0]' [M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.srcs/sources_1/new/7digits.v:51]
+INFO: [Synth 8-5546] ROM "ADC1/ad_max" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADC1/ff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "Analogfre/finfre" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "Analogfre/zero" won't be mapped to RAM because address size (36) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "shownum/sel" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP adoutdata_reg, operation Mode is: (A2*(B:0x16e))'.
+DSP Report: register ADC1/ff_reg is absorbed into DSP adoutdata_reg.
+DSP Report: register adoutdata_reg is absorbed into DSP adoutdata_reg.
+DSP Report: operator adoutdata0 is absorbed into DSP adoutdata_reg.
 WARNING: [Synth 8-3331] design main has unconnected port show[7]
 WARNING: [Synth 8-3331] design main has unconnected port show[6]
 WARNING: [Synth 8-3331] design main has unconnected port show[5]
@@ -218,41 +264,61 @@ WARNING: [Synth 8-3331] design main has unconnected port out[2]
 WARNING: [Synth 8-3331] design main has unconnected port out[1]
 WARNING: [Synth 8-3331] design main has unconnected port out[0]
 WARNING: [Synth 8-3331] design main has unconnected port error
-WARNING: [Synth 8-3331] design main has unconnected port sign
 WARNING: [Synth 8-3331] design main has unconnected port sign1
 WARNING: [Synth 8-3331] design main has unconnected port test
-WARNING: [Synth 8-3331] design main has unconnected port in[7]
-WARNING: [Synth 8-3331] design main has unconnected port in[6]
-WARNING: [Synth 8-3331] design main has unconnected port in[5]
-WARNING: [Synth 8-3331] design main has unconnected port in[4]
-WARNING: [Synth 8-3331] design main has unconnected port in[3]
-WARNING: [Synth 8-3331] design main has unconnected port in[2]
-WARNING: [Synth 8-3331] design main has unconnected port in[1]
-WARNING: [Synth 8-3331] design main has unconnected port in[0]
 WARNING: [Synth 8-3331] design main has unconnected port button
+WARNING: [Synth 8-3331] design main has unconnected port wheel
 WARNING: [Synth 8-3331] design main has unconnected port siginal
-INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[1]' (FD) to 'shownum/show24_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[0]' (FD) to 'shownum/show24_reg[3]'
-INFO: [Synth 8-3886] merging instance 'shownum/show24_reg[2]' (FD) to 'shownum/show24_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/show24_reg[3] )
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[3]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[1]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[9]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[7]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[6]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[5]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[4]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[8]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[2]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3886] merging instance 'ADC1/count_reg[10]' (FDE) to 'ADC1/count_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ADC1/count_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/display_out2_reg[11] )
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[11]' (FDE) to 'shownum/display_out2_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shownum/display_out2_reg[0] )
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[1]' (FDE) to 'shownum/display_out2_reg[6]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[2]' (FDE) to 'shownum/display_out2_reg[6]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[3]' (FDE) to 'shownum/display_out2_reg[6]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[4]' (FDE) to 'shownum/display_out2_reg[6]'
-INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[5]' (FDE) to 'shownum/display_out2_reg[6]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\shownum/display_out2_reg[6] )
-WARNING: [Synth 8-3332] Sequential element (shownum/show24_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (shownum/display_out2_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (shownum/display_out2_reg[0]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[21]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[22]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[23]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[24]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[25]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[26]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[27]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[28]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[29]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[30]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[31]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[32]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[33]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[34]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (Analogfre/frel_reg[35]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (shownum/display_out2_reg[11]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (ADC1/count_reg[0]) is unused and will be removed from module main.
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[7]' (FDE) to 'shownum/display_out1_reg[7]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[8]' (FDE) to 'shownum/display_out1_reg[8]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[9]' (FDE) to 'shownum/display_out1_reg[9]'
 INFO: [Synth 8-3886] merging instance 'shownum/display_out2_reg[10]' (FDE) to 'shownum/display_out1_reg[10]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 656.027 ; gain = 445.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|main        | (A2*(B:0x16e))' | 12     | 9      | -      | -      | 21     | 1    | 0    | -    | -    | -     | 1    | 0    | 
++------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -267,10 +333,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 656.027 ; gain = 445.824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 656.035 ; gain = 445.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -282,7 +348,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -305,8 +371,28 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin dwe_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin reset_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin vp_in
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC1/AD1  has unconnected pin vn_in
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -319,7 +405,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -331,71 +417,77 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
 
 Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |     5|
-|3     |LUT1   |    22|
-|4     |LUT2   |     6|
-|5     |LUT3   |     5|
-|6     |LUT4   |    68|
-|7     |LUT5   |    29|
-|8     |LUT6   |    23|
-|9     |MUXF7  |     1|
-|10    |FDRE   |   113|
-|11    |IBUF   |     1|
-|12    |OBUF   |    24|
-|13    |OBUFT  |    15|
-+------+-------+------+
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |xadc_wiz_0 |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |    45|
+|4     |DSP48E1    |     1|
+|5     |LUT1       |   151|
+|6     |LUT2       |    62|
+|7     |LUT3       |     8|
+|8     |LUT4       |   114|
+|9     |LUT5       |    47|
+|10    |LUT6       |    91|
+|11    |MUXF7      |     5|
+|12    |FDRE       |   388|
+|13    |IBUF       |     3|
+|14    |OBUF       |    25|
+|15    |OBUFT      |    14|
++------+-----------+------+
 
 Report Instance Areas: 
-+------+-------------+-----------+------+
-|      |Instance     |Module     |Cells |
-+------+-------------+-----------+------+
-|1     |top          |           |   313|
-|2     |  Binary2bcd |binary2bcd |   147|
-|3     |  shownum    |led_digits |   125|
-+------+-------------+-----------+------+
++------+--------------+-----------------+------+
+|      |Instance      |Module           |Cells |
++------+--------------+-----------------+------+
+|1     |top           |                 |   981|
+|2     |  ADC1        |ad               |   109|
+|3     |  Analogfre   |analogfre2binary |   388|
+|4     |  Binary2bcd  |binary2bcd       |   147|
+|5     |  Binary2bcd2 |binary2bcd_0     |   106|
+|6     |  shownum     |led_digits       |   186|
++------+--------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 653.953 ; gain = 443.703
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 653.953 ; gain = 112.160
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 653.953 ; gain = 443.703
+Synthesis finished with 0 errors, 20 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 679.320 ; gain = 133.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 679.320 ; gain = 469.117
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -403,9 +495,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-52 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 61 Warnings, 20 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 653.953 ; gain = 414.320
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 679.320 ; gain = 432.840
 INFO: [Common 17-1381] The checkpoint 'M:/Xilinx/projects/ad_frequncy2serial/ad_frequncy2serial.runs/synth_1/main.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 653.953 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Jun 03 01:14:29 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 679.320 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 03 17:36:06 2017...
